@@ -23,3 +23,5 @@
  4. `자유롭게 수정하기`
  5. `git commit -m '' 해주기`
  6. `git push origin main`
+ ### 위 이어서 다른 환경에서 git 이어 작업하기(학원)
+  `git pull origin main` 집에서 올린 파일 내려받기
