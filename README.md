@@ -36,3 +36,9 @@
  2. 바로가기 위치 div id명 준비하기
  3. 위 1번 `a` 속성 `href` 값으로 `#` 먼저 작성 후 위 2번 이름 작성하기
  4. 위 3번 결과 예시) id가 abcd일 경우 `<a href="#abcd"></a>`
+ ------
+ ### 링크복습
+ `<a herf="#"></a>` 임시 링크
+ `<a href="#header"></a>` header로 바로가기 링크
+ `<a href="./basic/index.html"></a>` index.html 이동(상대경로링크)
+ `<a href="./basci/index.html#main"></a>` index.html 로 이동하는데 절대경로와 상대경로를 같이 쓰는거
