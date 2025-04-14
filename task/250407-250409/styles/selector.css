@@ -1,14 +1,14 @@
-#weather {background-color: yellow;}
+#weather {background-color: blue;}
 #weather h1 {color: red;}
 #weather p {color:aqua;}
-#weather h2 {color:aliceblue;}
-#weather .result {color:beige;}
-#weather .result p {color:blue;}
-#news {}
-#news a{}
-#news p{}
-#news p span{}
-#news .box{}
-#news .box a{}
-#news .box h2{}
-#news .box p{}
+#weather h2 {color:black;}
+#weather .result {color:black;}
+#weather .result p {color:black;}
+#news {background-color:burlywood;}
+#news a{color:cadetblue;}
+#news P{color:aquamarine;}
+#news P span{color:black;}
+#box {color:green;}
+#box a{color:blueviolet;}
+#box h2{color:brown;}
+#box P{color:chartreuse;}
