@@ -1,3 +1,22 @@
-#mobile_wrap {background-color: #85E1FA;}
-#mobile_wrap img {}
-#mobile_wrap a {}
+#mobile_wrap {
+    background-color: #85E1FA;
+    width:440px; height:956px;
+    text-align:center;
+}
+#mobile_wrap img {
+    margin-top:359px;
+    margin-bottom:32px;
+}
+#mobile_wrap a {
+    background-color: white; color:black;
+    width:104px; height:35px;
+    /* a태그에 가로세로 크기 입력 시 적용이 안되는 이유는 a가 인라인요소이기 때문이다 */
+    /* 위 해결볍 : a태그를 css 속성을 이용해 크기를 인식하는 block으로 변경 */
+    display:inline-block;
+    line-height:35px;
+    font-family:"pretandard",sans-serif;
+    font-size:1rem;
+    font-weight:400;
+    letter-spacing:-0.02rem;
+    border-radius:50px;
+}

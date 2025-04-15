@@ -1,9 +1,60 @@
-#mobile_wrap {background-color: #85E1FA;}
-#mobile_wrap .photo{}
+#mobile_wrap {
+    background-color: #85E1FA; 
+    width:440px; height:956px;
+    text-align:center; /* 자식,자손 정렬 */
+    font-family: "pretandard",sans-serif; /* 자식,자손 글꼴 통일 */
+}
+#mobile_wrap .photo{
+    margin-top:117px; 
+    margin-bottom:6px;
+    display:inline-block;
+}
 #mobile_wrap .photo img{}
-#mobile_wrap h1{}
-#mobile_wrap h1 span{}
-#mobile_wrap h2{}
-#mobile_wrap .git{}
-#mobile_wrap .possibleskill {}
-#mobile_wrap .possibleskill li {}
+#mobile_wrap h1{
+    /* 글꼴은 부모 상속 상태 */
+    font-size:2.813rem;
+    font-weight:400;
+    line-height:1;
+    letter-spacing:-0.02rem;
+    color:black;
+    margin-bottom:54px;
+}
+#mobile_wrap h1 span{
+    font-weight:600;
+}
+#mobile_wrap h2{
+    line-height:1.4;
+    font-size:1rem;
+    font-weight:400;
+    letter-spacing:-0.02rem;
+    width:234px; 
+    margin-left:auto;
+    margin-right:auto;
+    text-align: left;
+}
+#mobile_wrap .git{
+    line-height:1.4;
+    font-size:1rem;
+    font-weight:400;
+    letter-spacing:-0.02rem;
+}
+#mobile_wrap .possible_skill {
+    font-size:1rem;
+    font-weight:400;
+    letter-spacing:-0.02rem;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    display: inline-block;
+}
+#mobile_wrap .possible_skill li {
+    line-height:1.4;
+    font-size:1rem;
+    font-weight:400;
+    letter-spacing:-0.02rem;
+    width:234px; 
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    display: inline-block;
+}
