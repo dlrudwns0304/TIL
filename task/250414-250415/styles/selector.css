@@ -1,18 +1,18 @@
-#weather{}
-#weather h1{}
-#weather .area{}
-#weather .temperature{}
-#weather p{}
-#weather .sub_title{}
-#weather .humidity{}
-#weather .dust{}
-#weather .result{}
-#weather .result p{}
-#news{}
-#news a{}
-#news .box{}
-#news .box a{}
-#news .box a h2{}
-#news .box a p{}
-#news p {}
-#news p span{}
+#weather{color:black;}
+#weather h1{background-color: green;}
+#weather .area{background-color: yellow;}
+#weather .temperature{background-color: rgba(255,0,0,0.5);}
+#weather p{background-color: #5555;}
+#weather .sub_title{background-color: aqua;}
+#weather .humidity{background-color: antiquewhite;}
+#weather .dust{background-color: cadetblue;}
+#weather .result{background-color: pink;}
+#weather .result p{color:yellow}
+#news{background-color: aquamarine;}
+#news a{background-color: blueviolet;}
+#news .box{background-color: brown;}
+#news .box a{color:white}
+#news .box a h2{color:green}
+#news .box a p{color:white}
+#news p {background-color: chocolate;}
+#news p span{background-color: chartreuse;}
