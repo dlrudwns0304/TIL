@@ -13,8 +13,6 @@
     line-height: 1;
     padding-top: 161px;
     padding-bottom:30px;
-    
-
 }
 #wrap > p{
     
@@ -32,36 +30,39 @@
 
 } /* #wrap의 h1 옆에 p */
 #wrap #join_membership{
-    background-color: aqua;
+    
     padding-top:76px;
 
-}
+}  
 #wrap #join_membership h2{
     font-size:1.375rem;
     font-weight:600;
     letter-spacing: -0.02rem;
     line-height: 1;
-    padding-bottom:16px;
+    padding-bottom:98px;
     
 }   
 #wrap #join_membership p{
     font-size:0.875rem;
     font-weight:300;
     letter-spacing: -0.02rem;
-    line-height: 1;
+
+    
+   
 }
-#wrap #join_membership input{
+#wrap #join_membership p input{
     font-size: 0.875rem;
     font-weight:300;
     letter-spacing: -0.02rem;
     line-height: 1;
-    padding-top:38px;
-    padding-bottom:16px;
+    
+    
+   
+
 
 }
 #wrap #join_membership p #login_btn{
     background-color: #3B82F6;
-    border-radius: 20px;
     width:410px;
     margin-bottom: 16px;
     padding-top:15px;
@@ -74,7 +75,6 @@
 }
 #wrap #join_membership p .google_login{
     background-color: #3B82F6;
-    border-radius: 20px;
     width:410px;
     display: block;
     text-align: center;
@@ -85,6 +85,9 @@
 }
 #wrap #join_membership+p {
     padding-top:160px;
+    text-align: center;
 
 } /* #wrap의 join_membership 옆에 p */
-#wrap #join_membership+p a {}
+#wrap #join_membership+p a {
+    font-size:
+}
