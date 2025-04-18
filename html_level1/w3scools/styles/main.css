@@ -2,63 +2,58 @@
     background-color: #000;
     width:440px;
     height:956px;
-    text-align: left;
     padding-left:15px;
     padding-right:15px;
 }
 #wrap h1{
-    font-size:2.5rem;
-    font-weight:600;
-    letter-spacing: -0.02rem;
-    line-height: 1;
-    padding-top: 161px;
+    font-size:2.5rem; /* 40px */
+    font-weight:700; /* bold */
+    padding-top: 163px;
     padding-bottom:30px;
 }
 #wrap > p{
-    
+    font-weight:500;
 
 }
 
  /* #wrap 모든 자식 p */
 #wrap h1+p{
-    font-size:1rem;
-    font-weight:500;
-    letter-spacing: -0.02rem;
-    line-height: 1;
+
+    margin-bottom:76px;
+
     
     
 
 } /* #wrap의 h1 옆에 p */
 #wrap #join_membership{
     
-    padding-top:76px;
+    
 
 }  
 #wrap #join_membership h2{
     font-size:1.375rem;
     font-weight:600;
-    letter-spacing: -0.02rem;
-    line-height: 1;
-    padding-bottom:98px;
-    
+    margin-bottom:16px;
 }   
 #wrap #join_membership p{
-    font-size:0.875rem;
-    font-weight:300;
-    letter-spacing: -0.02rem;
 
-    
-   
 }
-#wrap #join_membership p input{
+#wrap #join_membership .user_in {margin-bottom: 38px;}
+#wrap #join_membership .user_btn{}
+
+
+#wrap #join_membership p input::placeholder{
     font-size: 0.875rem;
     font-weight:300;
-    letter-spacing: -0.02rem;
-    line-height: 1;
-    
-    
-   
-
+}
+#wrap #join_membership p input{
+    border-radius: 20px;
+    width:410px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border:1px solid #fff;
 
 }
 #wrap #join_membership p #login_btn{
@@ -69,9 +64,8 @@
     padding-bottom:15px;
     padding-left: 20px;
     padding-right: 20px;
-
-
-
+    border-radius: 20px;
+    font-size:0.875rem;
 }
 #wrap #join_membership p .google_login{
     background-color: #3B82F6;
@@ -82,12 +76,16 @@
     padding-bottom:15px;
     padding-left: 20px;
     padding-right: 20px;
+    border-radius: 20px;
+    font-size:0.875rem;
 }
 #wrap #join_membership+p {
-    padding-top:160px;
     text-align: center;
-
+    font-size:0.75rem;
+    letter-spacing: 0;
+    margin-top:160px;
 } /* #wrap의 join_membership 옆에 p */
 #wrap #join_membership+p a {
-    font-size:
+    font-weight:600;
+    
 }

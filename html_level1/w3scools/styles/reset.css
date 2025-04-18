@@ -6,7 +6,7 @@ form,fieldset,legend,input,button,select,option,textarea,
 em,strong,sub,sup,img,span,del,s,q,mark,code,a {
     margin:0; padding:0; box-sizing: border-box;
     line-height:1;
-    letter-spacing:0;
+    letter-spacing:-0.02em;
     word-spacing:0;
     font-size:1em;
     font-weight:400;
