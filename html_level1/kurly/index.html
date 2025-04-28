@@ -55,12 +55,12 @@
                 <dd><button type="button" id="authentication_btn" class="btn">인증번호받기</button></dd>
                 <dt>주소<em>*</em></dt>
                 <dd>
-                    <button type="button" id="adress_search_btn">주소검색</button>
+                    <button type="button" id="address_search_btn">주소검색</button>
                     <span>배송지에 따라 상품정보가 달라질 수 있습니다.</span>
                 </dd>
                 <dd></dd>
                 <dt>성별</dt>
-                <dd>
+                <dd class="gender_g">
                     <input type="radio" name="gender" value="male" id="male"><label for="male">남자</label>
                     <input type="radio" name="gender" value="female" id="female"><label for="female">여자</label>
                     <input type="radio" name="gender" value="gender_none" id="gender_none"><label for="gender_none">선택안함</label>
@@ -68,14 +68,16 @@
                 <dd></dd>
                 <dt>생년월일</dt>
                 <dd>
-                    <input type="number" name="birthday_year" placeholder="yyyy">
-                    <input type="number" name="birthday_month" placeholder="mm">
-                    <input type="number" name="birthday_day" placeholder="dd">
+                    <span><input type="number" name="birthday_year" placeholder="yyyy"></span>
+                    <span><input type="number" name="birthday_month" placeholder="mm"></span>
+                    <span><input type="number" name="birthday_day" placeholder="dd"></span>
                 </dd>
                 <dd></dd>
             </dl>
-            <div class="btn"></div>
-            <button type="submit" id="sign_join_btn">가입하기</button>
+            <div class="btn">
+                <button type="submit" id="sign_join_btn">가입하기</button>
+            </div>
+            
         </form>
     </main>
 </body>
