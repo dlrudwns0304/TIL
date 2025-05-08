@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파과 | 메가박스</title>
+    <link rel="stylesheet" href="../css_basic/styles/reset.css"> 
+    <style>
+        main {
+            width:440px; height:956px; margin:0 auto; padding:0 30px;
+            background:linear-gradient(45deg, #000, #444, #000)
+            
+        }
+        main #box_office{ 
+        }
+        main #box_office ul{}
+        main #box_office ul li{perspective: 1000px;}
+        main #box_office ul li .poster{
+            position: relative; /* (back) absolute의 위치 부모 기준 */
+            display: block;
+            transform-style: preserve-3d;
+            transition: all 0.3s;
+        }
+        main #box_office ul li .poster:hover{transform: rotateY(180deg);}
+        main #box_office ul li .poster .front{
+            position: relative;/* absolute 의 위치 부모기준 */
+            backface-visibility: hidden;
+        }    
+        main #box_office ul li .poster .front .ranking{
+            color:#fff;
+            position: absolute; left:17px; top:11px; /* 겹치기 위한 위치 속성 */
+            font-size: 2.5rem;
+            text-shadow:0 7px 5px #000;
+        }
+        main #box_office ul li .poster .front img{
+            
+        }
+        main #box_office ul li .poster .back{
+            background-color: rgba(0,0,0,0.6);
+            position: absolute; left:0; top:0; /* 겹치기 위한 속성 */
+            height:100%;
+            display:flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+            padding:30px;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            
+        }
+        main #box_office ul li .poster .back  * {
+            color:#fff;
+            
+            
+        }
+        main #box_office ul li .poster:hover {}
+        main #box_office ul li .poster .back h2{}
+        main #box_office ul li .poster .back p{}
+        main #box_office ul li .poster .score_group{
+            border-top:1px solid #fff;
+            padding:25p 0 0;
+            text-align: center;
+        }    
+        main #box_office ul li .poster .score_group span{}
+        main #box_office ul li .poster .score_group .score{
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="box_office">
+            <ul>
+                <li></li>
+                <li>
+                    <a href="#" class="poster">
+                        <div class="front">
+                            <em class="ranking">2</em>
+                            <img src="./images/poster.jpg" alt="파과">
+                        </div>
+                        <div class="back">
+                            <h2>지킬게 생긴 킬러 vs 잃을 게 없는 킬러</h2>
+                            <p>40여 년간 감정 없이 바퀴벌레 같은 인간들을 방역해온 60대 킬러 `조각`(이혜영). `대모님`이라 불리며 살아있는 전설로 추앙받지만</p>
+                            <div class="score_group">
+                                <span>관람평</span>
+                                <em class="score">8.5</em>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

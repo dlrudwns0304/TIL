@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d transform | css</title>
+    <link  rel="stylesheet" href="../css_basic/styles/reset.css">
+    <style>
+        main {
+            height:100vh;
+            background:linear-gradient(90deg, #fff, #eee, #bbb, #aaa)
+        }
+        main .card_container {
+            perspective: 1000px; /* 부모 원근감 깊이 설정 */
+            
+        }
+        main .card_container .card{
+            position: relative;
+            display: block;
+            width:640px; height:415px;
+            transform: scale(0.6);
+            transform-style: preserve-3d;
+            transition: all 0.3s;
+            
+        }
+        main .card_container .card:hover {
+            transform: rotateY(180deg) scale(0.6); /* 마우스올렸을때 카드 뒤집기 */
+        
+            
+        }
+        main .card_container .card > *{
+            position: absolute; left:0; top:0; /* 앞 뒤 카드 뒤집기 */
+            /* 이면가시성 css (카드 앞, 뒷면 모두 뒤집는 면 숩기기) */
+            backface-visibility: hidden;
+        }
+        main .card_container .card .front{}
+        main .card_container .card .front img{}
+        main .card_container .card .back{
+            transform: rotateY(180deg);
+
+
+        }
+        main .card_container .card .back img{}
+
+    </style> 
+</head>
+<body>
+    <main>
+        <div class="card_container">
+            <a href="#" class="card">
+                <div class="front"><img src="./images/card_front.png" alt="card_front"></div>
+                <div class="back"><img src="./images/card_back.png" alt="card_back"></div>
+            </a>
+        </div>
+    </main>
+</body>
+</html>
