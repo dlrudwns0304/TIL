@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형웹 | css</title>
+    <link rel="stylesheet" href="../css_basic/styles/reset.css">
+    <style>
+        main {
+            /* width:1920px; */ /* 1920 가로크기 고정(반응형웹 제작 시 고정 크기 주의) */
+            max-width:1920px; /* 최대 제한 너비 설정 (사용자가 보는 디바이스 크기가 1920 이하일 경우 상대적으로 자동크기 조절)  */
+            min-width:901px; /* 최소 제한 너비 설정 (901~1920 사이값만 상대처리를 위한 최소 제한값 설정) */
+            border:7px solid #000;
+            height:100vh;
+        }
+        main .mv_list{
+            display:flex;
+            flex-flow: row wrap;
+            /* 자식 사이여백을 일정하게 적용시키는 flex 부모속성 */
+            gap:10px;
+        }
+        main .mv_list li{
+            /* width:calc(100% / 3); */ /* 반응형에서 요소 크기 조절 시 % 또는 calc() 계산법으로 상대처리 해야한다 크기가 고정되는 광고 및 특정영역만 필요시 최소한으로 px 고정 너비를 적용한다. */
+            width:calc((100% - (10px * 2)) / 2);
+            height:250px; /* 임시 높이값 */
+        }
+        main .mv_list li:nth-child(odd){background-color: aqua;}
+        main .mv_list li:nth-child(even){background-color: yellow;}
+        /* 반응형규칙(사용자가 이용하는 디바이스가 달라졌을 때 인식하는 값) */
+        @media screen and (max-width:900px) {
+            /* 기존 css 중 현재 규칙에 맞춰 달라지는 값만 수정 */
+            main {
+                /* max-width:900px; */
+                min-width:601px;
+                border-color:red;
+            } /* media 601~900 end */
+            main .mv_list li {width:calc((100% - (10px * 1)) / 2);}
+        }
+        @media screen and (max-width:600px) {
+            main {
+                min-width:320px;
+                border-color:blue;}
+            main .mv_list li{width:100%;}
+        } /* media 320~600 end */
+            
+    </style>
+</head>
+<body>
+    <!-- 유튜브 영상 미리보기 빈응형 구조 만들기 -->
+    <!-- desktop : 3열 (901~1920) -->
+    <!-- tablet : 2열 (601~900)-->
+    <!-- mobile : 1열 (320~600) -->
+    <main>
+        <ul class="mv_list">
+            <li>미리보기1</li>
+            <li>미리보기2</li>
+            <li>미리보기3</li>
+            <li>미리보기4</li>
+            <li>미리보기5</li>
+            <li>미리보기6</li>
+            <li>미리보기7</li>
+            <li>미리보기8</li>
+        </ul>
+    </main>
+</body>
+</html>
