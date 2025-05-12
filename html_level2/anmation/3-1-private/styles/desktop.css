@@ -44,10 +44,12 @@ main .bg_wrap .bg1 {
 main .bg_wrap .bg2 {
     height:200px; 
     background:url(../images/bg_city1.png) repeat-x;
+    animation:translate 5s linear infinite both;
 }
 main .bg_wrap .bg3 {
     height:100px; position:relative; top:-96px;
     background:url(../images/bg_city2.png) repeat-x;
+    animation:translate1 2s linear infinite both;
 }
 /* 메인제목 */
 main .txt {}
@@ -58,6 +60,17 @@ main .car #car {width:100%;}
 main .car #left_tire, main .car #right_tire {
     position:absolute; bottom:25px; width:67px;
 }
-main .car #left_tire {left:102px;}
-main .car #right_tire {right:91px;}
-
+main .car #left_tire {left:102px; animation:rotate 2s linear infinite both;}
+main .car #right_tire {right:91px; animation:rotate 2s linear infinite both;}
+@keyframes rotate {
+    0% {transform: rotate(360deg);}
+    100%  {transform: rotate(0);}
+}
+@keyframes translate {
+    from {transform: translateX(200px);}
+    to {transform: translateX(0);}
+}
+@keyframes translate1 {
+    0% {transform : translateX(100px);}
+    100% {transform : translateX(50px);}
+}
