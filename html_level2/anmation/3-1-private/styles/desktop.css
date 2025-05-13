@@ -60,13 +60,21 @@ main .bg_wrap .bg1 { /* 구름 */
 main .bg_wrap .bg2 { /* 먼 도시 */
     height:200px; 
     background:url(../images/bg_city1.png) repeat-x;
+<<<<<<< HEAD
     animation:bg 30s linaer infinite;
     
+=======
+    animation:translate 5s linear infinite both;
+>>>>>>> 3cce077d71298dac9ee2bc30fe6520049d455388
 }
 main .bg_wrap .bg3 {
     height:100px; position:relative; top:-96px;
     background:url(../images/bg_city2.png) repeat-x;
+<<<<<<< HEAD
     animation:bg 20s linear infinite;
+=======
+    animation:translate1 2s linear infinite both;
+>>>>>>> 3cce077d71298dac9ee2bc30fe6520049d455388
 }
 /* 메인제목 */
 main .txt {}
@@ -78,6 +86,17 @@ main .car #left_tire, main .car #right_tire {
     position:absolute; bottom:25px; width:67px;
     animation:tire 3s linear infinite ;
 }
-main .car #left_tire {left:102px;}
-main .car #right_tire {right:91px;}
-
+main .car #left_tire {left:102px; animation:rotate 2s linear infinite both;}
+main .car #right_tire {right:91px; animation:rotate 2s linear infinite both;}
+@keyframes rotate {
+    0% {transform: rotate(360deg);}
+    100%  {transform: rotate(0);}
+}
+@keyframes translate {
+    from {transform: translateX(200px);}
+    to {transform: translateX(0);}
+}
+@keyframes translate1 {
+    0% {transform : translateX(100px);}
+    100% {transform : translateX(50px);}
+}
