@@ -9,7 +9,7 @@
     <style>
         #wrap {
             width:100%; /* height:100vh; */
-            background:url(images/bmw_bg.jpg);
+            background:yellow url(images/bmw_bg.jpg);
             position:relative;
         }
         header {
@@ -21,23 +21,34 @@
             border-bottom:1px solid rgba(255,255,255,0.2);
             width:80%; margin:0 auto; display:flex; justify-content:space-around;
         }
-        header nav a {padding:10px 0; position:relative;}
         header nav a:hover {
-            width:max-content;
-            border-bottom:#fff;
+            border-bottom: #fff;
             
+
         }
-        header nav a::after {
-            content:''; display:block;
+        header nav a {padding:10px 0; position:relative;}
+
+        header nav a ::after {
+            content:''; display:inline-block;
             width:100%; height:1px; background:#cae4ff;
             position:absolute; bottom:-1px;
-        }
 
-        main {position:relative; width:1400px; height:80vh; margin:0 auto;}
+
+        }
+        main {
+            position:relative; width:1400px; height:80vh; margin:0 auto;
+
+        }  
         main img {
             position:absolute; left:0; bottom:100px;
-        }
+            animation: bmw 4s infinite;
 
+            
+        }
+        @keyframes bmw {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
     </style>
     <script>
         window.onload=function(){
